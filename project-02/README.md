@@ -1,4 +1,4 @@
-#  mongodb,  studio 3T, 설치와 사용
+#  mongodb, studio 3T, Robo 3T 설치와 사용
 
 ## mongodb 설치
 [mongodb 사이트](whttps://www.mongodb.com/try/download/communit)로 이동한다 - 커뮤니티 버전 다운로드  
@@ -45,6 +45,9 @@ net:
 $ sudo systemctl start mongod
 $ sudo systemctl enable mongod
 
+# 버전 확인
+$ mongo -version
+
 # 명령어 실행시 다음과 같은 에러가 발생시
 Failed to unlink socket file /tmp/mongodb-27017.sock Operation not permitted
 
@@ -65,3 +68,9 @@ $ mongo
 # 몽고디비 버전 확인
 > db.version()
 ```
+
+# studio 3T 설치
+1. 사용할 OS 버전에 맞춰서 다운로드 [링크](https://studio3t.com/)후 설치 - 유료
+
+# Robo 3T 설치 
+1. 사용할 OS 버전에 맞춰서 다운로드 [링크](https://robomongo.org/)후 설치 - 무료

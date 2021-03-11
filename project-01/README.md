@@ -20,7 +20,14 @@ $ node-red
 `http://localhost:1880`으로 접속  
 접속 후 node-red 대쉬보드에서 오른쪽 상단 메뉴 클락 -> 팔렛트 관리 -> 팔렛트 -> 설치가능한 노드에서 -> node-red-dashboard 참고  
 
-### 5. node-red 삭제
+### 5. node-red 정지 및 재시작 및 데몬 관리 - (데몬 관리는 리눅스에서만 적용)
+```bash
+node-red-stop # Node-RED 를 정지합니다.
+node-red-start # Node-RED 를 재시작합니다.
+sudo systemctl enable nodered.service # Node-RED를 매번 부팅할 때마다 자동 실행 시킵니다.
+sudo systemctl disable nodered.service # 부팅시 자동실행을 비활성화 한다
+```
+### 6. node-red 삭제
 ```bash
 $ sudo npm -g remove node-red
 $ sudo npm -g remove node-red-admin
