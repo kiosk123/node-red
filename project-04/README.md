@@ -59,4 +59,15 @@ mongodb 데몬을 재시작한다.
 $ sudo systemctl restart mongod
 ```
 
+생성한 계정으로 접속한다.
+```bash
+$ mongo -u "admin" -p "1234" --authenticationDatabase "admin"
+```
 
+### mongodb compass통해 생성된 계정으로 연결하기 
+```bash
+mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]
+
+# mongodb://아이디:비번@호스트주소:포트
+mongodb://admin:1234@192.168.0.222:27017
+```
